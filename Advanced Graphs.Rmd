@@ -87,9 +87,21 @@ There are two variations:
 ## Another 'over time' chart - ggstream
 
 
+This creates what the package author called 'streamographs', another way of showing change over time. It requires the package 'ggstream'.
+
+``` {r streamograph}
+# install.packages("ggstream")
+
+library(ggstream)
+library(ggplot2)
 
 
+ggplot(blockbusters, aes(year, box_office, fill = genre)) +
+  geom_stream() +
+  geom_stream_label(aes(label = genre))
 
+
+```
 
 
 ## References:
