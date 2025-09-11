@@ -86,7 +86,55 @@ There are two variations:
 
 ### Bump Plot with highlighting.
 
-Here's an example from the R Graph Gallery for a bump chart which highlights 
+Here's an example from the R Graph Gallery for a bump chart which highlights ranks.
+
+The dataset is retrieved from the rdbnomics package and is from the AMECO database.
+
+It contains the share of gross fixed capital formation (GFCF) in % of GDP for a selection of European countries. The data is available for the years 2000, 2010 and 2020.
+
+This pre-processing step is necessary to rank the countries according to their share of GFCF in % of GDP. The rank() function is used to create a ranking variable for each year.
+
+The countrycode() function is used to convert the ISO3 country codes to country names in German.
+
+```{r bump_plot_data_prep}
+
+# Library
+library(tidyverse)
+library(countrycode)
+library(rdbnomics)
+library(ggbump)
+library(MetBrewer)
+library(scales)
+
+
+
+allcty <- codelist |> filter(!is.na(eu28)) |> pull(iso3c) |> tolower()
+
+gfcf_private <- rdb(provider_code = "AMECO", dataset_code = "UIGP", 
+             dimensions = list(geo = allcty, unit = "mrd-ecu-eur"))
+gdp <- rdb(provider_code = "AMECO", dataset_code = "UVGD",
+           dimensions = list(geo = allcty, unit = "mrd-ecu-eur"))
+
+data <- bind_rows(gfcf_private, gdp) |> 
+  mutate(variable = case_when(
+    str_detect(dataset_name, "private") ~ "GFCF_p",
+    TRUE ~ "GDP")) |> 
+  select(geo, variable, period, value) |> 
+  pivot_wider(names_from = variable, values_from = value) |> 
+  mutate(share_p = GFCF_p/GDP*100, year = year(period), geo = toupper(geo))
+
+ranked <- data |> 
+  filter(year %in% c(2000, 2010, 2020)) |> 
+  mutate(ranking = rank(desc(share_p), ties.method = "first"), .by = year) |> 
+  mutate(ctry = countrycode(geo, "iso3c", "country.name.de"),
+         ctry = ifelse(geo == "CZE", "Tschechien", ctry))
+
+selected <- c("AUT", "DEU", "IRL", "FRA")
+
+head(ranked, n=10)
+
+
+```
 
 
 ## ggstream - another 'over time' chart - 
