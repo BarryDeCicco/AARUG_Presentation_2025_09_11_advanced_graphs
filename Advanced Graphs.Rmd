@@ -91,9 +91,11 @@ This creates what the package author called 'streamographs', another way of show
 
 ``` {r streamograph}
 # install.packages("ggstream")
-
 library(ggstream)
 library(ggplot2)
+
+head(blockbusters)
+
 
 
 ggplot(blockbusters, aes(year, box_office, fill = genre)) +
