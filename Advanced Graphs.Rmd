@@ -32,3 +32,8 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## References:
+
+- The R Graph Gallery (https://r-graph-gallery.com)
+- Wikipedia (https://en.wikipedia.org/wiki/Main_Page)
