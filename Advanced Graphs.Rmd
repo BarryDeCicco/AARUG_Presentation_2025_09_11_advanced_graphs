@@ -77,4 +77,6 @@ p
 ## References:
 
 - The R Graph Gallery (https://r-graph-gallery.com)
+  - The SanKey diagram (https://r-graph-gallery.com/sankey-diagram.html)
 - Wikipedia (https://en.wikipedia.org/wiki/Main_Page)
+  - The SanKey diagram (https://en.wikipedia.org/wiki/Sankey_diagram)
