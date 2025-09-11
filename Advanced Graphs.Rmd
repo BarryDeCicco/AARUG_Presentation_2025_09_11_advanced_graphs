@@ -78,7 +78,7 @@ p
 
 ```
 
-#### Variations
+### Variations
 
 There are two variations:
 - A bump chart, to illustrate changes in ranks rather than values.
