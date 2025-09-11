@@ -84,10 +84,14 @@ There are two variations:
 - A bump chart, to illustrate changes in ranks rather than values.
 - An Alluvial chart, which is used for freqcencies rather than values.
 
-## Another 'over time' chart - ggstream
+## ggstream - another 'over time' chart - 
 
 
 This creates what the package author called 'streamographs', another way of showing change over time. It requires the package 'ggstream'.
+
+It has options for producing symmetric plots, stacked plots, and proportional plots (everything adds up to 100%).
+
+#### Basic
 
 ``` {r streamograph}
 # install.packages("ggstream")
