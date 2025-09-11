@@ -84,6 +84,11 @@ There are two variations:
 - A bump chart, to illustrate changes in ranks rather than values.
 - An Alluvial chart, which is used for freqcencies rather than values.
 
+### Bump Plot with highlighting.
+
+Here's an example from the R Graph Gallery for a bump chart which highlights 
+
+
 ## ggstream - another 'over time' chart - 
 
 
@@ -127,8 +132,10 @@ ggplot(blockbusters, aes(year, box_office, fill = genre)) +
   - The SanKey diagram (https://r-graph-gallery.com/sankey-diagram.html)
 - Wikipedia (https://en.wikipedia.org/wiki/Main_Page)
   - The SanKey diagram (https://en.wikipedia.org/wiki/Sankey_diagram)
+- Bump plot with highlighting (https://r-graph-gallery.com/web-bump-plot-with-highlights.html)
 - ggstream
   - Github (https://github.com/davidsjoberg/ggstream)
   - LinkedIn post (https://www.linkedin.com/posts/statisticsglobe_tidyverse-visualanalytics-datascience-activity-7368189211981553664-Yv2J/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAEzU6MB0kVHCNuKg0uQsqI8A-QHPl2UNwQ)
+  
   
 
