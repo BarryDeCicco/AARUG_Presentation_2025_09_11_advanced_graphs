@@ -94,7 +94,7 @@ This creates what the package author called 'streamographs', another way of show
 library(ggstream)
 library(ggplot2)
 
-head(blockbusters)
+head(blockbusters, n=20)
 
 
 
