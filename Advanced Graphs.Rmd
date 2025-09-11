@@ -17,6 +17,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 This presentation covers various useful plot tips I've picked up from various sources.   It's intended to make your life a bit simpler. My sources are the R Graph Gallery, LinkedIn posts and the Medium website.
 
+
+### R Graph Gallery
+
+This is a great resource (https://r-graph-gallery.com) which contains illustrations and code chunks for a large variety of plots, and variations within plot types.  It is the first place to check.
+
+
 ## The SanKey Diagram
 
 The SanKey diagram is used to illustrate the low of quantities from earlier sources to later (or intermediate) destinations.
