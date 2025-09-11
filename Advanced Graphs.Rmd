@@ -109,6 +109,17 @@ ggplot(blockbusters, aes(year, box_office, fill = genre)) +
 
 ```
 
+## Other Links:
+
+- ggside (https://cran.r-project.org/web/packages/ggside/vignettes/ggside_basic_usage.html)- allows the addition of side plots to ggplot graphs.
+- ggrepl (https://ggrepel.slowkow.com/) spaces labels to avoid overlap.
+- add_test_pvalue (example at add_test_pvalue) - adds stastistical tests and results.
+-  ggscatterstats/ggstatsplot (https://github.com/IndrajeetPatil/ggstatsplot) - adds statistical tests to plots.
+- ggbetweenstats (https://github.com/IndrajeetPatil/ggstatsplot) - displays differences between groups.
+- ggalign (https://github.com/Yunuuuu/ggalign) lines up results in tabular form.
+- ggridges (https://statisticsglobe.com/ridgeline-plots-in-r) creates ridge plots, showing distribution over categories. 
+
+
 
 ## References:
 
