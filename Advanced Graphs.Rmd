@@ -72,7 +72,11 @@ p
 
 ```
 
+#### Variations
 
+There are two variations:
+- A bump chart, to illustrate changes in ranks rather than values.
+- An Alluvial chart, which is used for freqcencies rather than values.
 
 ## References:
 
