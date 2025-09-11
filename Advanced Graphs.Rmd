@@ -23,6 +23,14 @@ The SanKey diagram is used to illustrate the low of quantities from earlier sour
 
 Sankey diagrams are named after Irish Captain Matthew Henry Phineas Riall Sankey, who used this type of diagram in 1898 in a classic figure showing the energy efficiency of a steam engine. The original charts in black and white displayed just one type of flow (e.g. steam); using colors for different types of flows lets the diagram express additional variables. (See: https://en.wikipedia.org/wiki/Sankey_diagram#cite_note-3)
 
+You will need the package 'networkD3'.
+
+Data sources:
+
+- Connection data frame, which has three lists - sources, destinations and values
+
+- Incidence matrix, which is a square matrix, which must be converted into a connection data frame first.
+
 ```{r SanKey}
 
 # from:  https://r-graph-gallery.com/sankey-diagram.html
