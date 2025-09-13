@@ -213,6 +213,7 @@ ggplot(blockbusters, aes(year, box_office, fill = genre)) +
   - The SanKey diagram (https://en.wikipedia.org/wiki/Sankey_diagram)
 - Bump plot with highlighting (https://r-graph-gallery.com/web-bump-plot-with-highlights.html)
 - ggstream
+  - Stream plots in ggplot2 with geom_stream (Stream plots in ggplot2 with geom_stream)
   - Github (https://github.com/davidsjoberg/ggstream)
   - LinkedIn post (https://www.linkedin.com/posts/statisticsglobe_tidyverse-visualanalytics-datascience-activity-7368189211981553664-Yv2J/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAEzU6MB0kVHCNuKg0uQsqI8A-QHPl2UNwQ)
   
