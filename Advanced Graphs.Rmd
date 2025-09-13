@@ -191,6 +191,20 @@ ggplot(blockbusters, aes(year, box_office, fill = genre)) +
 
 ```
 
+``` {r streamograph_ridge}
+#
+install.packages("ggstream")
+library(ggstream)
+# install.packages("ggplot2")
+library(ggplot2)
+
+ggplot(blockbusters, aes(x = year, y = box_office, fill = genre)) +
+  geom_stream(type = "ridge") 
+
+
+
+```
+
 ## Other Links:
 
 - ggside (https://cran.r-project.org/web/packages/ggside/vignettes/ggside_basic_usage.html)- allows the addition of side plots to ggplot graphs.
