@@ -207,6 +207,8 @@ ggplot(blockbusters, aes(year, box_office, fill = genre)) +
 
 - The R Graph Gallery (https://r-graph-gallery.com)
   - The SanKey diagram (https://r-graph-gallery.com/sankey-diagram.html)
+- R-Charts (r-charts.com)
+  - Stream plots in ggplot2 with geom_stream (Stream plots in ggplot2 with geom_stream)
 - Wikipedia (https://en.wikipedia.org/wiki/Main_Page)
   - The SanKey diagram (https://en.wikipedia.org/wiki/Sankey_diagram)
 - Bump plot with highlighting (https://r-graph-gallery.com/web-bump-plot-with-highlights.html)
